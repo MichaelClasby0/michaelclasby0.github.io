@@ -1,0 +1,42 @@
+body {
+  min-height:100%;
+  min-width: 800px;
+  background: #333399;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #333399, #ae00ff) fixed no-repeat; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #333399, #ae00ff) fixed no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin:0px;
+}
+
+
+.navbar {
+ 
+  display:flex;
+  overflow:hidden;
+  justify-content: center;
+  height: 80px;
+  background-color: #33339948; /* rgba(61,116,226,0) ;*/ 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding: 8px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover {
+  background:#8CA6DB;
+  color: black;
+  border-radius:8px;
+}
+
+
+.h1, h2, h3, h4, p {
+  color: white;
+}
