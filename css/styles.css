@@ -48,6 +48,17 @@ body {
   top: 10px
 }
 
+section#Projects, section#CV {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+
+/* #pdf {
+  width: 80%;
+  cursor: pointer;
+} */
+
+
 @media screen and (max-width: 400px) {
   .navbar {
     display:flex;
