@@ -45,13 +45,23 @@ const startPdf = () => {
 var resizeId;
 window.addEventListener('load', startPdf);
 
+// window.addEventListener('resize', () => {
+    //     console.log("resized");
+    
+    //     clearTimeout(resizeId);
+    //     resizeId = setTimeout(startPdf, 500);
+    
+    // });
+    
+    
+    
 // Prevents canvas being drawn multiple times while resizing 
+var lastWidth = window.innerWidth;
 window.addEventListener('resize', () => {
-    console.log("resized");
-
-    clearTimeout(resizeId);
-    resizeId = setTimeout(startPdf, 500);
-
+    if (window.innerWidth !== lastWidth) {
+        lastWidth = window.innerWidth;
+        clearTimeout(resizeId);
+        resizeId = setTimeout(startPdf, 300);
+    }
 });
-
 

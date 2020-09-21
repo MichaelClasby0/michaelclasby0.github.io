@@ -24,7 +24,7 @@
   <body>
     <div class="container">
       <!-- Page Content goes here -->
-      <div class="center-align">
+      <div class="left-align">
         <h2>Hello!</h2>
         <h4>
           I am
@@ -35,109 +35,134 @@
           <nav class="navbar">
             <div id="nav">
               <a href="#top">Home</a>
-              <a href="#Projects">Projects</a>
               <a href="#CV">CV</a>
+              <a href="#Projects">Projects</a>
             </div>
           </nav>
         </div>
 
         <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
+          I am a second year MEng Joint Mathematics and Computing (JMC) student
+          at Imperial College London and an aspiring software engineer.
         </p>
         <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
+          If you're a recruiter, you can find my CV and a selection of my
+          projects on this site.
         </p>
         <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
+          Also, check out my LinkedIn and GitHub pages for more insight on my
+          work. If you wish to contact me, you can do so by email!
         </p>
 
-        <section id="CV">
-          <h2>My CV</h2>
-          <h5>
-            <em>Click it to download!</em>
-          </h5>
-          <div id="pdf">
-            <a href="assets/CV.pdf" download>
-              <canvas id="cnv"></canvas>
-            </a>
-          </div>
-        </section>
+        <!-- SECTION: ABOUT ME -->
+        <a class="section" id="AboutMe"></a>
+        <hr />
+        <h3>About me!</h3>
 
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
+        <p class="flow-text">WORK IN PROGRESS!</p>
 
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
+        <!-- SECTION: CV -->
+        <a class="section" id="CV"></a>
+        <hr />
+        <h2>My CV</h2>
+        <!-- <h5>
+          <em>Click it to download!</em>
+        </h5> -->
+        <div id="pdf" class="z-depth-5">
+          <a href="assets/CV.pdf" download>
+            <canvas id="cnv"></canvas>
+          </a>
+        </div>
 
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
-
-        <section id="Projects">
-        
+        <!-- SECTION: Projects -->
+        <a class="section" id="Projects"></a>
+        <hr />
         <h2>Projects</h2>
 
         <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
+          Below are a selection of my projects click on them to reveal more!
+          <br />
         </p>
+        <h5 class="flow-text" style="margin-bottom: 25px">
+          <em>
+            Due to the nature of some of my work (active university
+            courseworks), it cannot be shared publicly on GitHub, however, I am
+            happy to share any and all of my private repos with you on request
+            to my email.
+          </em>
+        </h5>
 
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
+        <div class="card horizontal sticky-action" style="overflow: visible">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://lorempixel.com/100/190/nature/1"
+            />
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Card One<i class="material-icons right">more_vert</i></span
+              >
 
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
+              <p style="color: black">
+                Here is information about this product.
+              </p>
+            </div>
 
-        </section>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+          <div
+            class="card-reveal"
+            style="display: none; transform: translateY(0%)"
+          >
+            <span class="card-title grey-text text-darken-4"
+              >Card Title<i class="material-icons right">close</i></span
+            >
+            <p style="color: black">
+              Here is some more information about this product that is only
+              revealed once clicked on.
+            </p>
+          </div>
+        </div>
 
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
-        <p class="flow-text">
-          I am Flow Text. Intro paragraph about my life story goes here and
-          other garbage like that!
-        </p>
+        <div class="card horizontal sticky-action" style="overflow: visible">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://lorempixel.com/100/190/nature/2"
+            />
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Card Two<i class="material-icons right">more_vert</i></span
+              >
+
+              <p style="color: black">
+                Here is information about this product.
+              </p>
+            </div>
+
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+          <div
+            class="card-reveal"
+            style="display: none; transform: translateY(0%)"
+          >
+            <span class="card-title grey-text text-darken-4"
+              >Card Title<i class="material-icons right">close</i></span
+            >
+            <p style="color: black">
+              Here is some more information about this product that is only
+              revealed once clicked on.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <!--JavaScript at end of body for optimized loading-->
