@@ -1,9 +1,10 @@
 body {
   min-height:100%;
   /* min-width: 800px; */
-  background: #333399;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #333399, #ae00ff) fixed no-repeat; /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #333399, #ae00ff) fixed no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #667db6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2e64ee, #0c89dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   margin:0px;
 }
 
@@ -14,12 +15,12 @@ body {
   justify-content: center;
   height: auto;
   width: auto;
-  background-color: #5933c0; /* rgba(61,116,226,0) ;*/ 
+  background-color:#406ddf;
 }
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: bolder;
   color: white;
   text-align: center;
@@ -42,10 +43,11 @@ body {
   color: white;
 }
 
-#sticky {
+#nav-container {
   position: sticky;
   position: -webkit-sticky;
-  top: 10px
+  top: 10px;
+  transition: all 3s linear;
 }
 
 /* Section anchors used to offset the anchor from the fixed header */
@@ -60,24 +62,22 @@ a.section {
   width: 100%;
 }
 
+.card  {
+  border-radius: 4px !important;
+  overflow: hidden !important;
+}
 
 /* Small screen adjustments */
 @media screen and (max-width: 400px) {
   .navbar {
-    display:flex;
-    overflow:hidden;
-    justify-content: left;
-    height: auto;
-    width: auto;
+    flex-direction: column;
   }
   .navbar a {
-    float: none;
-    display: block;
     text-align: left;
-    padding: 0px 25px;
+    width: auto;
+    padding: 2px 25px;
   }
- 
   a.section {
-    top: -110px;
+    top: -120px;
   }
 }
