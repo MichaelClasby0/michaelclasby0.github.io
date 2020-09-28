@@ -1,13 +1,11 @@
 body {
   min-height:100%;
-  /* min-width: 800px; */
-  background: #667db6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2e64ee, #0c89dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+ 
+  background: #6F6F8F;
+  background: -webkit-linear-gradient(to top, #4F4F5F, #6F6F8F);
+  background: linear-gradient(to top, #4F4F5F, #6F6F8F) fixed;
   margin:0px;
 }
-
 
 .navbar {
   display:flex;
@@ -15,7 +13,7 @@ body {
   justify-content: center;
   height: auto;
   width: auto;
-  background-color:#406ddf;
+  background-color:#AFAFBF;
 }
 
 .navbar a {
@@ -28,12 +26,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 4px;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
   width: auto;
 }
 
 .navbar a:hover {
-  background:#8CA6DB;
+  background:#BFBFCF;
   color: black;
   border-radius:8px;
 }
@@ -47,7 +45,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 10px;
-  transition: all 3s linear;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Section anchors used to offset the anchor from the fixed header */
@@ -78,6 +76,6 @@ a.section {
     padding: 2px 25px;
   }
   a.section {
-    top: -120px;
+    top: 0px;
   }
 }
