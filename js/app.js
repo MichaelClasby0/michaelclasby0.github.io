@@ -51,8 +51,8 @@ window.addEventListener("resize", () => {
 var lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
-  if (window.innerWidth <= 400) {
-    const nav = document.getElementById("nav-container");
+  const nav = document.getElementById("nav-container");
+  if (window.innerWidth <= 650) {
 
     if ((nav.getBoundingClientRect().top = 10)) {
       if (window.scrollY <= lastScrollY) {
@@ -62,5 +62,7 @@ window.addEventListener("scroll", () => {
       }
     }
     lastScrollY = window.scrollY;
+  } else {
+    nav.style.position = "sticky";
   }
 });

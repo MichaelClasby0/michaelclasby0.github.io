@@ -1,6 +1,6 @@
 body {
   min-height:100%;
- 
+  min-width: 350px;
   background: #6F6F8F;
   background: -webkit-linear-gradient(to top, #4F4F5F, #6F6F8F);
   background: linear-gradient(to top, #4F4F5F, #6F6F8F) fixed;
@@ -37,8 +37,17 @@ body {
 }
 
 
-.h1, h2, h3, h4, h5, p {
+.h1, h2, h3, h4, h5, p, ul {
   color: white;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+li {
+  margin-top: 0.8rem;
+  margin-left: 0;
 }
 
 #nav-container {
@@ -66,7 +75,7 @@ a.section {
 }
 
 /* Small screen adjustments */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   .navbar {
     flex-direction: column;
   }
