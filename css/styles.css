@@ -2,7 +2,8 @@ body {
   min-height:100%;
   min-width: 350px;
   background: #6F6F8F;
-  background: -webkit-linear-gradient(to top, #4F4F5F, #6F6F8F);
+  background: -moz-linear-gradient(to top, #4F4F5F, #6F6F8F) fixed;
+  background: -webkit-linear-gradient(to top, #4F4F5F, #6F6F8F) fixed;
   background: linear-gradient(to top, #4F4F5F, #6F6F8F) fixed;
   margin:0px;
 }
@@ -74,6 +75,10 @@ a.section {
   overflow: hidden !important;
 }
 
+.card.horizontal .card-image {
+  max-width: 30% !important;
+}
+
 /* Small screen adjustments */
 @media screen and (max-width: 650px) {
   .navbar {
@@ -86,5 +91,13 @@ a.section {
   }
   a.section {
     top: 0px;
+  }
+
+  .card.horizontal .card-image {
+    max-width: 50% !important;
+  }
+
+  .card img {
+    max-height: 15rem;
   }
 }
